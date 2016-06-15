@@ -1,8 +1,14 @@
-#include <iostream>
-
-using namespace std;
+#include "Code.h"
 
 int main( int argc, char** argv )
 {
-	cout << "Hello World" << endl;
+	std::cout << "Hello World" << std::endl;
+
+	Code c;
+
+	c.setProperty( "foo", "bar" );
+	c.setProperty( "hello", "world" );
+
+	cout << "Property foo = " << c.getProperty( "foo" ) << endl;
+	cout << "Property hello = " << c.getProperty( "hello" ) << endl;
 }
