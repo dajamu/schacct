@@ -1,0 +1,4 @@
+ACLOCAL_AMFLAGS		= ${ACLOCAL_FLAGS} -I m4
+AUTOMAKE_OPTIONS	= subdir-objects
+SUBDIRS			= src
+EXTRA_DIST		= autogen.sh
